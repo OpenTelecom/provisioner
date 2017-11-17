@@ -14,6 +14,12 @@
 {% if line.wallpaperserverpath %}
 <P2917>{{ line.wallpaperserverpath  }}</P2917>
 {% endif %}
+{% if provision.settings.wallpapersource %}
+<P2916>{{ provision.settings.wallpapersource }}</P2916>
+{% endif %}
+{% if provision.settings.wallpaperserverpath %}
+<P2917>{{ provision.settings.wallpaperserverpath  }}</P2917>
+{% endif %}
 <P271>1</P271>
 <P270>{{ line.display_name }}</P270>
 <P47>{{ line.sip_server.primary.host }}</P47>
