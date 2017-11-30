@@ -60,6 +60,19 @@
             "/directory\\.xml/i"
         ]
     },
+    "gxp2130": {
+        "folder": "gxphd",
+        "config_files": [
+            "cfg$mac.xml",
+            "cfg$mac",
+            "directory.xml"
+        ],
+        "regexs": [
+            "/cfg.*/i",
+            "/[a-z0-9]{12}\\.xml/i",
+            "/directory\\.xml/i"
+        ]
+    },
 
     "gxp2170": {
         "folder": "gxphd",
