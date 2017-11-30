@@ -4,6 +4,7 @@ The provisioner is an application to generate provisioning information for hardw
 * Cisco SPA3x and SPA5x
 * Yealink T2x and T4x
 * Polycom SoundPoint and VVX
+* Grandstream GXP2170 and GXP2130
 
 # Data flow
 
@@ -178,6 +179,7 @@ curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X PUT
 curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X PUT -d '{"settings": {}}' http://provisionerurl/api/phones/grandstream/
 curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X PUT -d '{"settings": {}}' http://provisionerurl/api/phones/grandstream/gxphd
 curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X PUT -d '{"settings": {}}' http://provisionerurl/api/phones/grandstream/gxphd/gxp2170
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X PUT -d '{"settings": {}}' http://provisionerurl/api/phones/grandstream/gxphd/gxp2130
 ```
 
 
@@ -291,8 +293,10 @@ Yealink
 * 16: BLF
 
 Grandstream
+*Please note that each model has a set number of Fixed VPK and Dynamic VPK. Based on fixed/dynamic, your type will change.
 * 0: account
-* 11: BLF
+* 11: BLF (Fixed only)
+* 1: BLF (Dynamic only)
 
 ### Example Yealink device document
 ```
@@ -484,6 +488,14 @@ Grandstream
               "value": "2009",
               "label": "2009"
             }
+          },
+          "mpk1": {
+            "type": "16",
+            "key": {
+              "line": "0",
+              "value": "*3101",
+              "label": "Park 101"
+            }
           }
         },
         "sidecar_01": {
@@ -522,6 +534,7 @@ Grandstream
 
 * Two accounts are configured one with username user_abcd and the other with username user_4abcj
 * Three lines are configured. Line 1 is linked to account 0, line 2 is linked to account 1, line 3 is set to monitor BLF on extension 2009 on account 
+* For GXP2130/GXP2160, MPK key 1 is set to monitor parking lot.
 * Three buttons on sidecar are configured. Key 1 is set to monitor BLF on extension 1593 on account 0, key 2 is set to monitor BLF on extension 1594 on account 1, key 3 is set to monitor BLF on extension 1595 on account 1.
 
 # Known issues
