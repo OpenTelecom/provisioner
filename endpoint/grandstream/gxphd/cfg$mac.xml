@@ -395,5 +395,53 @@
 <P23966>{{ provision.settings.lines.48.key.label }}</P23966>
 <P23967>{{ provision.settings.lines.48.key.value }}</P23967>
 {% endif %}
+{% if provision.settings.lines.mpk1.key.label %}
+<P323>{{ provision.settings.lines.mpk1.type }}</P323>
+<P301>{{ provision.settings.lines.mpk1.key.line }}</P301>
+<P302>{{ provision.settings.lines.mpk1.key.label }}</P302>
+<P303>{{ provision.settings.lines.mpk1.key.value }}</P303>
+{% endif %}
+{% if provision.settings.lines.mpk2.key.label %}
+<P324>{{ provision.settings.lines.mpk2.type }}</P324>
+<P304>{{ provision.settings.lines.mpk2.key.line }}</P304>
+<P305>{{ provision.settings.lines.mpk2.key.label }}</P305>
+<P306>{{ provision.settings.lines.mpk2.key.value }}</P306>
+{% endif %}
+{% if provision.settings.lines.mpk3.key.label %}
+<P325>{{ provision.settings.lines.mpk3.type }}</P325>
+<P307>{{ provision.settings.lines.mpk3.key.line }}</P307>
+<P308>{{ provision.settings.lines.mpk3.key.label }}</P308>
+<P309>{{ provision.settings.lines.mpk3.key.value }}</P309>
+{% endif %}
+{% if provision.settings.lines.mpk4.key.label %}
+<P326>{{ provision.settings.lines.mpk4.type }}</P326>
+<P310>{{ provision.settings.lines.mpk4.key.line }}</P310>
+<P311>{{ provision.settings.lines.mpk4.key.label }}</P311>
+<P312>{{ provision.settings.lines.mpk4.key.value }}</P312>
+{% endif %}
+{% if provision.settings.lines.mpk5.key.label %}
+<P327>{{ provision.settings.lines.mpk5.type }}</P327>
+<P313>{{ provision.settings.lines.mpk5.key.line }}</P313>
+<P314>{{ provision.settings.lines.mpk5.key.label }}</P314>
+<P315>{{ provision.settings.lines.mpk5.key.value }}</P315>
+{% endif %}
+{% if provision.settings.lines.mpk6.key.label %}
+<P328>{{ provision.settings.lines.mpk6.type }}</P328>
+<P316>{{ provision.settings.lines.mpk6.key.line }}</P316>
+<P317>{{ provision.settings.lines.mpk6.key.label }}</P317>
+<P318>{{ provision.settings.lines.mpk6.key.value }}</P318>
+{% endif %}
+{% if provision.settings.lines.mpk7.key.label %}
+<P329>{{ provision.settings.lines.mpk7.type }}</P329>
+<P319>{{ provision.settings.lines.mpk7.key.line }}</P319>
+<P320>{{ provision.settings.lines.mpk7.key.label }}</P320>
+<P321>{{ provision.settings.lines.mpk7.key.value }}</P321>
+{% endif %}
+{% if provision.settings.lines.mpk8.key.label %}
+<P353>{{ provision.settings.lines.mpk8.type }}</P353>
+<P354>{{ provision.settings.lines.mpk8.key.line }}</P354>
+<P355>{{ provision.settings.lines.mpk8.key.label }}</P355>
+<P356>{{ provision.settings.lines.mpk8.key.value }}</P356>
+{% endif %}
 </config>
 </gs_provision>
