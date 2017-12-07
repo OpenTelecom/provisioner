@@ -24,6 +24,14 @@
           "changelog": "",
           "last_modified": null
         },
+{
+          "id": "5",
+          "name": "GAC Conference series [2500]",
+          "directory": "gac",
+          "description": "Use Grandstream Encrypted Compiler By Default",
+          "changelog": "",
+          "last_modified": null
+        },
         {
           "id": "4",
           "name": "GXP Enterprise HD series [2100,2110,2120,2130,2160,2170]",
@@ -47,6 +55,19 @@
       "changelog": "PACKAGER: "
     }
   },
+"gac2500": {
+        "folder": "gac",
+        "config_files": [
+            "cfg$mac.xml",
+            "cfg$mac",
+            "directory.xml"
+        ],
+        "regexs": [
+            "/cfg.*/i",
+            "/[a-z0-9]{12}\\.xml/i",
+            "/directory\\.xml/i"
+        ]
+    },
     "gxp2160": {
         "folder": "gxphd",
         "config_files": [
@@ -60,7 +81,8 @@
             "/directory\\.xml/i"
         ]
     },
-    "gxp2130": {
+
+"gxp2130": {
         "folder": "gxphd",
         "config_files": [
             "cfg$mac.xml",
@@ -73,6 +95,7 @@
             "/directory\\.xml/i"
         ]
     },
+
 
     "gxp2170": {
         "folder": "gxphd",

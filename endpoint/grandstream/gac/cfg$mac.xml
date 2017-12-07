@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gs_provision version="1">
+<config version="1">
+{% for line in lines %}
+<P271>1</P271>
+<P270>{{ provision.settings.account_name }}</P270>
+<P47>{{ line.sip_server.primary.host }}</P47>
+<P271>1</P271>
+<P48></P48>
+<P35>{{ line.username }}</P35>
+<P36>{{ line.username }}</P36>
+<P34>{{ line.auth_password }}</P34>
+<P3>{{ line.display_name }}</P3>
+<P78>1</P78>
+<P33>*98</P33>
+<P103>1</P103>
+<P52>2</P52>
+<P2397>1</P2397>
+<P1347>*5</P1347>
+<P2347>1</P2347>
+<P191>0</P191>
+<P90>2</P90>
+<P76>stun.ipvideotalk.com</P76>
+<P277>1</P277>
+<P194>1</P194>
+<P6767>1</P6767>
+<P192>zellatech.com/firmware/gs/</P192>
+{% endfor %}
+{% if provision.settings.accounts.1.basic.enable %}
+<P401>1</P401>
+<P417>{{ provision.settings.account_name }}</P417>
+<P402>{{ provision.settings.accounts.1.sip.realm_01 }}</P402>
+<P403>{{ provision.settings.accounts.1.sip.outbound_proxy_01 }}</P403>
+<P404>{{ provision.settings.accounts.1.sip.username }}</P404>
+<P405>{{ provision.settings.accounts.1.sip.username }}</P405>
+<P406>{{ provision.settings.accounts.1.sip.password }}</P406>
+<P407>{{ provision.settings.accounts.1.basic.display_name }}</P407>
+<P426>{{ provision.settings.accounts.1.basic.display_name }}</P407>
+{% endif %}
+{% if provision.settings.accounts.2.basic.enable %}
+<P501>1</P501>
+<P517>{{ provision.settings.account_name }}</P517>
+<P502>{{ provision.settings.accounts.2.sip.realm_01 }}</P502>
+<P503>{{ provision.settings.accounts.2.sip.outbound_proxy_01 }}</P503>
+<P504>{{ provision.settings.accounts.2.sip.username }}</P504>
+<P505>{{ provision.settings.accounts.2.sip.username }}</P505>
+<P506>{{ provision.settings.accounts.2.sip.password }}</P506>
+<P507>{{ provision.settings.accounts.2.basic.display_name }}</P507>
+{% endif %}
+{% if provision.settings.accounts.3.basic.enable %}
+<P601>1</P601>
+<P617>{{ provision.settings.account_name }}</P617>
+<P602>{{ provision.settings.accounts.3.sip.realm_01 }}</P602>
+<P603>{{ provision.settings.accounts.3.sip.outbound_proxy_01 }}</P603>
+<P604>{{ provision.settings.accounts.3.sip.username }}</P604>
+<P605>{{ provision.settings.accounts.3.sip.username }}</P605>
+<P606>{{ provision.settings.accounts.3.sip.password }}</P606>
+<P607>{{ provision.settings.accounts.3.basic.display_name }}</P607>
+{% endif %}
+{% if provision.settings.accounts.4.basic.enable %}
+<P1701>1</P1701>
+<P1717>{{ provision.settings.account_name }}</P1717>
+<P1702>{{ provision.settings.accounts.4.sip.realm_01 }}</P1702>
+<P1703>{{ provision.settings.accounts.4.sip.outbound_proxy_01 }}</P1703>
+<P1704>{{ provision.settings.accounts.4.sip.username }}</P1704>
+<P1705>{{ provision.settings.accounts.4.sip.username }}</P1705>
+<P1706>{{ provision.settings.accounts.4.sip.password }}</P1706>
+<P1707>{{ provision.settings.accounts.4.basic.display_name }}</P1707>
+{% endif %}
+{% if provision.settings.accounts.5.basic.enable %}
+<P1801>1</P1801>
+<P1817>{{ provision.settings.account_name }}</P1817>
+<P1802>{{ provision.settings.accounts.5.sip.realm_01 }}</P1802>
+<P1803>{{ provision.settings.accounts.5.sip.outbound_proxy_01 }}</P1803>
+<P1804>{{ provision.settings.accounts.5.sip.username }}</P1804>
+<P1805>{{ provision.settings.accounts.5.sip.username }}</P1805>
+<P1806>{{ provision.settings.accounts.5.sip.password }}</P1806>
+<P1807>{{ provision.settings.accounts.5.basic.display_name }}</P1807>
+{% endif %}
+{% if provision.settings.lines.1.key.label %}
+<P23000>{{ provision.settings.lines.1.type }}</P23000>
+<P23001>{{ provision.settings.lines.1.key.line }}</P23001>
+<P23002>{{ provision.settings.lines.1.key.label }}</P23002>
+<P23003>{{ provision.settings.lines.1.key.value }}</P23003>
+{% endif %}
+{% if provision.settings.lines.2.key.label %}
+<P23005>{{ provision.settings.lines.2.type }}</P23005>
+<P23006>{{ provision.settings.lines.2.key.line }}</P23006>
+<P23007>{{ provision.settings.lines.2.key.label }}</P23007>
+<P23008>{{ provision.settings.lines.2.key.value }}</P23008>
+{% endif %}
+</config>
+</gs_provision>
